@@ -3,11 +3,16 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Form() {
   const navigate = useNavigate();
+  const dataLayer = window.dataLayer;
 
   let [name, setName] = useState("");
 
   const logTown = (e) => {
     e.preventDefault();
+    dataLayer.push({
+      'event': 'form_submit',
+      'userName': name
+    })
     navigate('/confirmation');
   }
 
