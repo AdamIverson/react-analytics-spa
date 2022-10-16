@@ -9,6 +9,7 @@ export default function Form() {
 
   const logTown = (e) => {
     e.preventDefault();
+
     dataLayer.push({
       'event': 'form_submit',
       'userName': name

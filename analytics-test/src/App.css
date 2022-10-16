@@ -24,5 +24,19 @@ ul {
   width: 20%;
   background-color: wheat;
   text-align: center;
+  animation: 3s infinite alternate slideIn;
+}
+
+@keyframes slideIn {
+  from {
+    width: 300%;
+    margin-left: 0%;
+  }
+
+  to {
+    width: 100%;
+    margin-left: 100%;
+
+  }
 }
 
