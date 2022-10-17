@@ -1,7 +1,8 @@
-import { React, useState } from "react";
+import { React, useState, createContext } from "react";
 import { useNavigate } from 'react-router-dom';
 
 export default function Form() {
+  const Context = createContext("");
   const navigate = useNavigate();
   const dataLayer = window.dataLayer;
 
